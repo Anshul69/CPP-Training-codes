@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main(){
+    int choice,car=0,bike=0,rikshaw=0;
+    int i =1;
+    while(i){
+        cout<<"Enter the choice \n";
+        cout<<"1. Car \n";
+        cout<<"2. Bike \n";
+        cout<<"3. Rikshaw \n";
+        cout<<"4. Exit \n";
+        cin>>choice;
+        switch(choice){
+            case 1:
+              car++;
+              cout<<"Car parked\nTotal cars "<<car<<endl;
+              break;
+            case 2:
+              bike++;
+              cout<<"Bike parked\nTotal bike "<<bike<<endl;
+              break;
+            case 3:
+              rikshaw++;
+              cout<<"Rikshaw parked\nTotal rikshaw "<<rikshaw<<endl;
+              break;
+            case 4:
+              i = i-1;
+              break;
+            default:
+              cout<<"Wrong Choice Entered \n";
+              break;
+
+        }
+
+    }
+    return 0;
+}
